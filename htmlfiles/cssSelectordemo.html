@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .example {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-left: 5px solid #007bff;
+        }
+        .highlight {
+            color: #007bff;
+            font-weight: bold;
+        }
+        .class-example {
+            color: #28a745;
+        }
+        #id-example {
+            font-style: italic;
+        }
+        ul {
+            margin: 10px 0;
+        }
+        ul li {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .section-title {
+            margin-top: 20px;
+        }
+        .highlight {
+            color: #FF5722;
+            font-weight: bold;
+        }
+        /* The navigation bar */
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cssSelectordemo.html">CSS Selector</a></li>
+            <li><a href="xpathdemo.html">XPath</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>CSS Selectors Demo</h1>
+
+        <div class="example">
+            <h2>Universal Selector</h2>
+            <p class="highlight">This selects all elements on the page.</p>
+        </div>
+
+        <div class="example">
+            <h2>Type Selector</h2>
+            <p>This selects all <code>div</code> elements.</p>
+        </div>
+
+        <div class="class-example example">
+            <h2>Class Selector</h2>
+            <p>Elements with the <code>.class-example</code> class are styled with green text.</p>
+        </div>
+
+        <div id="id-example" class="example">
+            <h2>ID Selector</h2>
+            <p>Elements with the <code>#id-example</code> ID are italicized.</p>
+        </div>
+
+        <div class="example">
+            <h2>Attribute Selector</h2>
+            <input type="text" placeholder="Input field" />
+        </div>
+
+        <ul class="example">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <div class="example">
+            <h2>Descendant Selector</h2>
+            <div>
+                <p>Nested paragraph inside a div.</p>
+            </div>
+        </div>
+
+        <div class="example">
+            <h2>Child Selector</h2>
+            <div>
+                <p>Direct child paragraph.</p>
+            </div>
+        </div>
+
+        <div class="example">
+            <h2>Sibling Selector</h2>
+            <h1>Heading</h1>
+            <p>Paragraph following the heading.</p>
+        </div>
+
+        <div class="example">
+            <h2>Pseudo-class Selector</h2>
+            <ul>
+                <li>First Item</li>
+                <li>Second Item</li>
+                <li>Third Item</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>

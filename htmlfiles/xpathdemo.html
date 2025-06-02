@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XPath Cheatsheet Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        .content, .info {
+            margin: 15px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        a {
+            color: #2196F3;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        form {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input {
+            display: block;
+            margin: 10px 0;
+            padding: 8px;
+            width: 100%;
+            max-width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        ul {
+            margin: 10px 0;
+        }
+        ul li {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .section-title {
+            margin-top: 20px;
+        }
+        .highlight {
+            color: #FF5722;
+            font-weight: bold;
+        }
+
+               /* The navigation bar */
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+		<a href="index.html">Home</a>
+		<a href="cssSelectordemo.html">CssSelector</a>
+		<a href="xpathdemo.html">Xpath</a>
+	  </div>
+    <!-- Absolute and Relative Paths -->
+    <div>
+        <h1>XPath Cheatsheet Examples</h1>
+        <p class="highlight">Welcome to XPath Examples</p>
+        <div class="content">
+            <!-- Contains, Starts-With, Ends-With -->
+            <a href="login.html" class="link-primary">Login</a>
+            <a href="signup.html" class="link-primary">Sign Up</a>
+        </div>
+    </div>
+
+    <!-- Form Section -->
+    <form>
+        <!-- Specific Attribute, Logical AND, Logical OR -->
+        <input type="text" id="user-name" name="username" placeholder="Enter your username">
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+        <!-- Ends-With Attribute -->
+        <input type="email" id="email-end" placeholder="Enter your email">
+        <!-- Parent Node -->
+        <button id="submit-button">Submit</button>
+    </form>
+
+    <!-- List Section -->
+    <ul>
+        <!-- First Element, Last Element, Element at Position -->
+        <li class="list-item">Item 1</li>
+        <li class="list-item">Item 2</li>
+        <li class="list-item">Item 3</li>
+    </ul>
+
+    <!-- Section with Descendants and Siblings -->
+    <h2 class="section-title">More Info</h2>
+    <span>Testing</span>
+    <p class="info">Copyrights &copy;&nbsp;Educatio.co.in.</p>
+    <p>Thank you</p>
+    <!-- Nested Structure for Ancestors, Descendants -->
+    <div class="nested">
+        <div>
+            <span id="descendant-node" class="highlight">Descendant Node Example</span>
+        </div>
+    </div>
+</body>
+</html>
