@@ -1,0 +1,15 @@
+package com.demo.Example;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class AppTest{
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver = new FirefoxDriver();
+		driver.navigate().to("https://educatio.co.in");
+		Thread.sleep(2000);
+		//select radio
+	}
+}

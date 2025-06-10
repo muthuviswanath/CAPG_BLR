@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;HealeniumDemoTest.java&apos; to &apos;healeniumexample/src/test/java&apos;&#x0D;&#x0A;- Original project: &apos;healeniumdemo&apos;&#x0D;&#x0A;- Destination element: &apos;healeniumexample/src/test/java&apos;&#x0D;&#x0A;- Original element: &apos;com.demo.healeniumdemo.HealeniumDemoTest.java&apos;" description="Copy compilation unit" destination="=healeniumexample/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/" element1="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.demo.healeniumdemo{HealeniumDemoTest.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1749280003031" units="1" version="1.0"/>
+</session>

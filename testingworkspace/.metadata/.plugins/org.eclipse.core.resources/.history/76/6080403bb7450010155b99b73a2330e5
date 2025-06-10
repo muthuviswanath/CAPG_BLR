@@ -1,0 +1,16 @@
+package com.demo.testngdemo.objectrepo;
+
+import org.openqa.selenium.support.FindBy;
+
+public class TNSTCHomePage {
+@FindBy(id = "matchStartPlace")
+private String startPlace_txtbox;
+
+@FindBy(id = "matchEndPlace")
+private String endPlace_txtbox;
+
+/*//ul/li[@class='menu-item']*/
+
+
+
+}

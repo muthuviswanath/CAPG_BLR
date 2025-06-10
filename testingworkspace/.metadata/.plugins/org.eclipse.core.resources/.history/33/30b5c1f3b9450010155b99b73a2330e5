@@ -1,0 +1,38 @@
+package com.demo.testngdemo.tests;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import com.demo.testngdemo.objectrepo.TNSTCHomePage;
+
+public class TSNSTSearchBus {
+	WebDriver driver;
+	static String baseUrl = "https://www.tnstc.in/OTRSOnline/";
+	@BeforeClass
+	public void navigation() {
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.navigate().to(baseUrl); // Example URL, replace with actual
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	}
+	
+	@Test(dataprovider = "busSearchData")
+	public void searchBus() throws InterruptedException {
+		TNSTCHomePage tnstcHomePage = new TNSTCHomePage(driver);
+		tnstcHomePage.searchBus("CHENNAI TAMBARAM", "BANGALORE", "13");
+		Thread.sleep(5000);
+	}
+	
+	@DataProvider(name = "busSearchData")
+	public Object[][] trainData() {
+		// Data provider for train search data
+		return new Object[][] {
+			{"CHENNAI", "BANGALORE", "13"}
+		};
+	}
+}

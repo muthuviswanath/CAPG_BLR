@@ -1,0 +1,17 @@
+package com.demo.testngdemo.objectrepo;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class IrctcHomePage {
+@FindBy(linkText = "REGISTER")
+private WebElement registerLink;
+
+
+@FindBy(linkText = "LOGIN")
+private WebElement loginLink;
+
+@FindBy(xpath = "//input[@placeholder = 'User Name]")
+private WebElement username_textbox;
+
+}

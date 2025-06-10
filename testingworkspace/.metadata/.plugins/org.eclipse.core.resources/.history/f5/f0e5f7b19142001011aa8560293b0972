@@ -1,0 +1,11 @@
+package com.capg.PomDemo.objectrepository;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class HomePage {
+
+	@FindBy(linkText = "LOGIN")
+	private WebElement login_link;
+	
+}

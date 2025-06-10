@@ -1,0 +1,11 @@
+package com.capg.PomDemo.impl;
+
+import org.openqa.selenium.WebDriver;
+
+public class Lunch {
+	static WebDriver driver;
+	static String baseURL = "https://www.google.com";
+	public static void main(String[] args) {
+		
+	}
+}

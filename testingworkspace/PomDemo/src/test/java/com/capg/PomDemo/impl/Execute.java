@@ -1,0 +1,20 @@
+package com.capg.PomDemo.impl;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.capg.PomDemo.objectrepository.GooglePage;
+
+public class Execute {
+	static WebDriver driver = new ChromeDriver();
+	static String baseURL = "https://www.google.com";
+	public static void main(String[] args) throws InterruptedException {
+		driver.get(baseURL);
+		driver.manage().window().maximize();
+		GooglePage googlePage = new GooglePage(driver);
+		googlePage.search("selenium");
+		
+		
+		
+	}
+}

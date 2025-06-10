@@ -1,0 +1,48 @@
+package com.demo.testngdemo.objectrepo;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class IrctcHomePage {
+	@FindBy(linkText = "REGISTER")
+	private WebElement registerLink;
+
+
+	@FindBy(linkText = "LOGIN")
+	private WebElement loginLink;
+
+	@FindBy(xpath = "//input[@placeholder = 'User Name]")
+	private WebElement username_textbox;
+
+	@FindBy(xpath = "//input[@placeholder = 'Password]")
+	private WebElement password_textbox;
+
+	@FindBy(xpath = "//button[text() = 'SIGN IN']")
+	private WebElement signin_button;
+
+	@FindBy(xpath = "(//input[@role='searchbox'])[1]")
+	private WebElement from_textbox;
+	
+	@FindBy(xpath = "(//input[@role='searchbox'])[2]")
+	private WebElement to_textbox;
+	
+	@FindBy(xpath = "//button[text()='Search']")
+	private WebElement search_button;
+	
+	WebDriver driver;
+	IrctcHomePage(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+
+	}
+	
+	public void chooseTrain(String from, String to) {
+		from_textbox.sendKeys(from);
+		Thread.sleep(3000);
+		
+		to_textbox.sendKeys(to);
+		search_button.click();
+	}}
+}

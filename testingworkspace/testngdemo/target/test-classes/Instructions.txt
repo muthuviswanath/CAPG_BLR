@@ -1,0 +1,7 @@
+Accessing Data using Properties Files:
+--------------------------------------
+
+1. Create the properties file inside the project
+     key = value
+2. Create a File Reader object to read the properties file
+3. Create the object of Properties class

@@ -1,0 +1,17 @@
+package com.demo.Example;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+public class JavaScriptWay {
+	public static void main(String[] args) {
+		WebDriver driver = new ChromeDriver();
+		driver.get("file:///D:/Capg_Blr/htmlfiles/demopage.html");
+		RemoteWebDriver rwd = (RemoteWebDriver) driver;
+		String script = "windows.scrollTo(0,document.body.scrollHeight)";
+		rwd.executeScript(script);
+		rwd.executeScript("alert('Document is scrolled')");
+		
+	}
+}

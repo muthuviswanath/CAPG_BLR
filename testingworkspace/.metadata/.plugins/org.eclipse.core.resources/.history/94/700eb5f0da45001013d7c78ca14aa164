@@ -1,0 +1,5 @@
+Accessing Data using Properties Files:
+--------------------------------------
+
+1. Create the properties file inside the project
+     key = value

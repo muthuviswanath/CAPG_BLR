@@ -1,0 +1,20 @@
+package com.demo.Example;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class AppTest{
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver = new FirefoxDriver();
+		driver.navigate().to("https://educatio.co.in");
+		Thread.sleep(2000);
+		WebElement css_link = driver.findElement(By.linkText("CssSelector"));
+		css_link.click();
+		WebElement highlighted_paragraph = driver.findElement(By.cssSelector("[class='example'] [class='highlight']"));
+		String content = highlighted_paragraph.getText();
+		System.out.println("Content of the highlighted text is: " + content);
+		//div[@class='DayPicker-Month']//div[contains(@class,'DayPicker-Day')]//p[text()='6']
+	}
+}

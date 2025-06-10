@@ -1,0 +1,20 @@
+package com.demo.Example;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+public class JavaScriptWay {
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver = new ChromeDriver();
+		driver.get("file:///D:/Capg_Blr/htmlfiles/demopage.html");
+		driver.manage().window().maximize();
+		Thread.sleep(3000);
+		RemoteWebDriver rwd = (RemoteWebDriver) driver;
+		String script = "window.scrollTo(0,document.body.scrollHeight)";
+		rwd.executeScript(script);
+		Thread.sleep(3000);
+		rwd.executeScript("alert('Document is scrolled')");
+		
+	}
+}

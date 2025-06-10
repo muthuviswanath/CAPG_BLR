@@ -1,0 +1,20 @@
+package com.demo.Example;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class JavaScriptWay {
+	public static void main(String[] args) {
+		WebDriver driver = new ChromeDriver();
+		driver.get("file:///D:/Capg_Blr/htmlfiles/demopage.html");
+		Actions act = new Actions(driver);
+		WebElement mouseover = driver.findElement(By.xpath("//button[@id='mousehover']"));
+		act.scrollToElement(mouseover).build().perform();
+		act.click(driver.findElement(By.xpath("//a[contains(text(),'Top')]")));
+		
+		
+	}
+}

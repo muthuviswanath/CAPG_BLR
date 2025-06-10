@@ -1,0 +1,16 @@
+package com.demo.testngdemo.tests;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeClass;
+
+public class TSNSTSearchBus {
+	WebDriver driver;
+	static String baseUrl = "https://www.tnstc.in/OTRSOnline/";
+	@BeforeClass
+	public void navigation() {
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.navigate().to(baseUrl); // Example URL, replace with actual
+	}
+}

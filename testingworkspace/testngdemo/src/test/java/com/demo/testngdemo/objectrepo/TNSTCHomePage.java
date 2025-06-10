@@ -1,0 +1,92 @@
+package com.demo.testngdemo.objectrepo;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class TNSTCHomePage {
+	@FindBy(id = "matchStartPlace")
+	private WebElement startPlace_txtbox;
+
+	@FindBy(id = "matchEndPlace")
+	private WebElement endPlace_txtbox;
+
+	@FindBy(id = "txtdeptDateOtrip")
+	private WebElement selectDate_input;
+
+	@FindBy(id = "searchButton")
+	private WebElement searchButton;
+
+	@FindBy(xpath = "//a[contains(text(),'Login / Sign up')]")
+	private WebElement login_singup_link;
+
+	@FindBy(id= "txtUserLoginID")
+	private WebElement username_txtbox;
+
+	@FindBy(id= "txtPassword")
+	private WebElement password_txtbox;
+
+	@FindBy(xpath= "//span[@id='captcha']")
+	private WebElement givenCaptcha;
+
+	@FindBy(id= "txtCaptchaCode")
+	private WebElement captcha_txtbox;
+	
+	@FindBy(xpath = "//button[@id='ValidateUser']")
+	private WebElement loginButton;
+	
+	
+	
+	
+	
+
+
+	/*//ul/li[@class='menu-item']*/
+
+	WebDriver driver;
+	public TNSTCHomePage(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this); 
+	}
+	
+	public void searchBus(String source, String destination, String date) throws InterruptedException {
+		startPlace_txtbox.sendKeys(source);
+		Thread.sleep(2000);
+		List<WebElement> srclist = driver.findElements(By.xpath("//ul/li[@class='ui-menu-item']"));
+		for (WebElement src : srclist) {
+			if (src.getText().equalsIgnoreCase("CHENNAI TAMBARAM")) {
+				src.click();
+				break;
+			}
+		}
+		
+		endPlace_txtbox.sendKeys(destination);
+		Thread.sleep(2000);
+		List<WebElement> destlist = driver.findElements(By.xpath("//ul/li[@class='ui-menu-item']"));
+		for (WebElement dest : destlist) {
+			if (dest.getText().equalsIgnoreCase("BENGALURU")) {
+				dest.click();
+				break;
+			}
+		}
+		WebElement selectDate = driver.findElement(By.xpath("//td/a[contains(text(),'"+date+"')]"));
+		selectDate.click();
+		searchButton.click();
+		
+	
+	}
+	
+	public void loginToApp(String username, String password) throws InterruptedException {
+		login_singup_link.click();
+		Thread.sleep(1000);
+		username_txtbox.sendKeys(username);
+		password_txtbox.sendKeys(password);
+		String captcha = givenCaptcha.getText();
+		captcha_txtbox.sendKeys(captcha);
+		loginButton.click();
+	}
+}

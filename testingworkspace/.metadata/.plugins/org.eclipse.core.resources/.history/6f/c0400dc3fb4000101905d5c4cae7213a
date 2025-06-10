@@ -1,0 +1,27 @@
+package com.demo.Example;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class AppTest{
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver = new FirefoxDriver();
+		driver.navigate().to("file:///D:/Capg_Blr/htmlfiles/demopage.html");
+		Thread.sleep(2000);
+		WebElement country_list = driver.findElement(By.xpath("//select[@id='countryselect']"));
+		Select dropdown = new Select(country_list);
+		//dropdown.selectByIndex("Nepal");
+		//dropdown.selectByContainsVisibleText("Nepal");
+		//dropdown.selectByValue("BAN");
+		dropdown.selectByVisibleText("Ne");
+		
+		
+				
+		
+	}
+}

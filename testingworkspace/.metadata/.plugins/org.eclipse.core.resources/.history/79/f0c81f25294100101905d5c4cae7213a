@@ -1,0 +1,15 @@
+package com.demo.Example;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+public class JavaScriptWay {
+	public static void main(String[] args) {
+		WebDriver driver = new ChromeDriver();
+		driver.get("file:///D:/Capg_Blr/htmlfiles/demopage.html");
+		RemoteWebDriver rd = (RemoteWebDriver) driver;
+		rd.executeScript("alert('Hi')");
+		
+	}
+}

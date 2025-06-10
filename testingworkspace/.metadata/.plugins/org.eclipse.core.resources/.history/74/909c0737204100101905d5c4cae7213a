@@ -1,0 +1,15 @@
+package com.demo.Example;
+
+import java.io.IOException;
+import java.io.PrintStream;
+
+public class RedirectOutput {
+public static void main(String[] args) throws Exception {
+PrintStream fileout = new PrintStream("D:\\redirectedoutput\\message.txt");
+PrintStream consoleout = System.out;
+
+System.setOut(fileout);
+System.out.println("Welcome to the world of Java");
+
+}
+}

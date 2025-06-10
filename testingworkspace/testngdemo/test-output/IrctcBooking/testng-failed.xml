@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [IrctcBooking]" guice-stage="DEVELOPMENT">
+  <parameter name="destination" value="MAS"/>
+  <parameter name="source" value="SBC"/>
+  <test thread-count="5" name="RegressionTest(failed)">
+    <classes>
+      <class name="com.demo.testngdemo.tests.TestNgAnnotations">
+        <methods>
+          <include name="setupSuite"/>
+          <include name="searchTrains" invocation-numbers="0"/>
+          <include name="setupTest"/>
+          <include name="tearDownClass"/>
+          <include name="setupClass"/>
+        </methods>
+      </class> <!-- com.demo.testngdemo.tests.TestNgAnnotations -->
+    </classes>
+  </test> <!-- RegressionTest(failed) -->
+</suite> <!-- Failed suite [IrctcBooking] -->

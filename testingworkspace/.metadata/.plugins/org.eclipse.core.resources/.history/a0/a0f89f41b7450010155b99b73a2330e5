@@ -1,0 +1,31 @@
+package com.demo.testngdemo.objectrepo;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class TNSTCHomePage {
+@FindBy(id = "matchStartPlace")
+private String startPlace_txtbox;
+
+@FindBy(id = "matchEndPlace")
+private String endPlace_txtbox;
+
+@FindBy(id = "txtdeptDateOtrip")
+private String selectDate_input;
+
+@FindBy(id = "searchButton")
+private String searchButton;
+
+
+/*//ul/li[@class='menu-item']*/
+
+WebDriver driver;
+public TNSTCHomePage(WebDriver driver) {
+	this.driver = driver;
+	// Initialize the elements using PageFactory
+	//
+PageFactory.initElements(driver, this); // Uncomment if using PageFactory
+
+
+}

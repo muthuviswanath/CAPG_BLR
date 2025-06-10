@@ -1,0 +1,33 @@
+package com.capg.PomDemo.objectrepository;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class GooglePage {
+
+	@FindBy(name = "q")
+	private WebElement searchBox;
+	
+	WebDriver driver;
+	public GooglePage(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+	public void search(String query) {
+		searchBox.sendKeys(query);
+		List<WebElement>  suggestions =  this.driver.findElements(By.xpath("//li[@data-attrid='AutocompletePrediction']"));
+		for(int i=0; i<suggestions.size();i++) {
+			if(suggestions.get(i).getText().equals(query)) {
+				suggestions.get(i).click();
+				break;
+			}
+		}
+	}
+	
+}

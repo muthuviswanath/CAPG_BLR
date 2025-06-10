@@ -1,0 +1,21 @@
+package com.demo.Example;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+public class JavaScriptWay {
+	public static void main(String[] args) {
+		WebDriver driver = new ChromeDriver();
+		driver.get("file:///D:/Capg_Blr/htmlfiles/demopage.html");
+		WebElement disabled_text = driver.findElement(By.id("disabled_text"));
+		RemoteWebDriver rwd = (RemoteWebDriver) driver;
+		String script = "document.getElementById('disabled_text').value = 'Hello' ";
+		rwd.executeScript(script);
+		
+		rwd.executeScript("alert('Disabled text now has something')");
+		
+	}
+}

@@ -1,0 +1,49 @@
+package com.demo.Example;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class InteractWithIFrame {
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver = new ChromeDriver();
+		driver.get("file:///D:/Capg_Blr/htmlfiles/demopage.html");
+		driver.manage().window().maximize();
+		// Implicit wait
+		// Tells the webdriver to wait for a certain amount of time irrespective of whether
+		// the element is loaded or not
+		// After the timeout, if the element is not found, it throws NoSuchElementFound Exception
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		
+		//Explicit or WebDriver wait
+		// When the elements are partially loaded and we need to perform actions based on the
+		// unloaded elements.
+		// After the timeout, if the element is not found, it throws NoSuchElementFound Exception
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		WebElement ele = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("java")));
+		
+		
+		//Fluent Wait
+		
+		FluentWait<WebDriver> flwait = new FluentWait<WebDriver>(driver)
+										.withTimeout(Duration.ofMinutes(5))
+										.pollingEvery(Duration.ofSeconds(10));
+		
+		
+		
+		WebElement iframe = driver.findElement(By.id("courses-iframe"));
+		driver.switchTo().frame(0);
+		driver.findElement(By.xpath("//input[@type='radio'][@value='Java']")).click();
+		driver.switchTo().defaultContent();
+		String a= driver.findElement(By.xpath("//table//td[3]")).getText();
+		String t=driver.findElement(By.xpath("//table//td[2]")).getText();
+		System.out.println("the price of "+t+"="+a);
+
+	}
+}

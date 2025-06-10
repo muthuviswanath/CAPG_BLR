@@ -1,0 +1,32 @@
+package com.capg.nobroker.repo;
+
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class HomePage {
+	@FindBy(xpath = "//input[@id='listPageSearchLocality'][@placeholder='Search upto 3 localities or landmarks']")
+	private WebElement searchBox;
+
+	@FindBy(xpath = "//span[@id='selectedLocalities']")
+	private WebElement selectedLocalities;
+
+	public HomePage(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+	}
+
+	public void enterSearchText(String text, WebDriver driver)throws InterruptedException {
+		searchBox.sendKeys(text);
+		Point location = searchBox.getLocation();
+		int x = 0;
+		int y = 390;
+		Actions actions = new Actions(driver);
+		Thread.sleep(2000); // Wait for the search box to be ready
+		actions.moveToElement(searchBox, x, y).click().perform();
+		Thread.sleep(2000); // Wait for the search box to be ready
+		
+	}
+}

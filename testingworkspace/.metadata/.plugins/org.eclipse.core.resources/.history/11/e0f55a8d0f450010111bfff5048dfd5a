@@ -1,0 +1,18 @@
+package com.demo.nbroker.objectrepo;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class HomePage {
+@FindBy(xpath = "//div[text()='Buy']")
+private WebElement buy_link;
+
+@FindBy(xpath = "//div[text()='Rent']")
+private WebElement rent_link;
+
+@FindBy(xpath = "//input[@id='listPageSearchLocality']")
+private WebElement search_textbox;
+
+
+
+}

@@ -1,0 +1,28 @@
+package com.demo.testngdemo.tests;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeSuite;
+
+public class TestNgAnnotations {
+/*
+ * @BeforeSuite - Before starting the suite: Setup system properties for the suite.
+ * @BeforeTest - Before the start if the test: Setup test-specific configurations.
+ * @BeforeClass - Before the class: Initialize the web browser, navigation steps, setup configurations.
+ * @BeforeMethod - Before each test method: Setup preconditions for each test method.
+ * @test - Test method: Execute the actual test case.
+ * @AfterMethod - After each test method: Cleanup after each test method execution.
+ * @AfterClass - After the class: Close the web browser and perform any necessary cleanup.
+ * @AfterTest - After the test: Perform any cleanup after the test execution.
+ * @AfterSuite - After the suite: Final cleanup after all tests in the suite have run.
+ *
+ * */
+	
+	WebDriver driver;
+	@BeforeSuite
+	public void setupSuite() {
+		// Setup system properties for the suite
+		System.out.println("Setting up system properties for the suite.");
+		System.out.println("Choosing the QA Server for testing.");
+	
+	}
+}

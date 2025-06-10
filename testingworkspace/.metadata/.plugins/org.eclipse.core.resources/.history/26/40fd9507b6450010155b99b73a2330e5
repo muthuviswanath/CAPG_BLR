@@ -1,0 +1,68 @@
+package com.demo.testngdemo.objectrepo;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class IrctcHomePage {
+	@FindBy(linkText = "REGISTER")
+	private WebElement registerLink;
+
+	@FindBy(xpath = "//a[@class='fa fa-window-close pull-right loginCloseBtn ng-tns-c19-13']")
+	private WebElement closeLoginPopup;
+
+	@FindBy(linkText = "LOGIN")
+	private WebElement loginLink;
+
+	@FindBy(xpath = "//input[@placeholder = 'User Name']")
+	private WebElement username_textbox;
+
+	@FindBy(xpath = "//input[@placeholder = 'Password']")
+	private WebElement password_textbox;
+
+	@FindBy(xpath = "//button[text() = 'SIGN IN']")
+	private WebElement signin_button;
+
+	@FindBy(xpath = "(//input[@role='searchbox'])[1]")
+	private WebElement from_textbox;
+
+	@FindBy(xpath = "(//input[@role='searchbox'])[2]")
+	private WebElement to_textbox;
+
+	@FindBy(xpath = "//button[text()='Search']")
+	private WebElement search_button;
+
+	WebDriver driver;
+	public IrctcHomePage(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+
+	}
+	
+	public void logIntoApp(String username, String password) throws InterruptedException {
+		loginLink.click();
+		Thread.sleep(2000);
+		username_textbox.sendKeys(username);
+		Thread.sleep(1000);
+		password_textbox.sendKeys(password);
+		Thread.sleep(10000);
+		signin_button.click();
+	}
+
+	public void chooseTrain(String from, String to) throws InterruptedException {
+		
+		from_textbox.sendKeys(from);
+		Thread.sleep(3000);
+		closeLoginPopup.click();
+		Thread.sleep(2000);
+		from_textbox.click();
+		driver.findElement(By.xpath("(//ul[@role='listbox']//li//span[text()=' KSR BENGALURU - SBC '])[1]")).click();
+		Thread.sleep(1000);
+		to_textbox.sendKeys(to);
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//ul[@role='listbox']//li//span[contains(text(),' MGR')]")).click();
+		search_button.click();
+	}
+}

@@ -1,0 +1,24 @@
+package com.demo.Example;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class InteractWithIFrame {
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver = new ChromeDriver();
+		driver.get("file:///D:/Capg_Blr/htmlfiles/demopage.html");
+		driver.manage().window().maximize();
+		Thread.sleep(3000);
+		WebElement iframe = driver.findElement(By.id("courses-iframe"));
+		driver.switchTo().frame(0);
+		driver.findElement(By.xpath("//input[@type='radio'][@value='Java']")).click();
+		driver.switchTo().defaultContent();
+	String a= driver.findElement(By.xpath("//table//td[3]")).getText();
+	String t=driver.findElement(By.xpath("//table//td[2]")).getText();
+	
+System.out.println("the price of "+t+"="+a);
+	
+	}
+}

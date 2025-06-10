@@ -1,0 +1,32 @@
+package com.demo.Example;
+
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class HandleWindows {
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver = new ChromeDriver();
+		driver.navigate().to("file:///D:/Capg_Blr/htmlfiles/demopage.html");
+		Thread.sleep(2000);
+		String parent_window =driver.getWindowHandle(); 
+		System.out.println(parent_window);
+		WebElement new_window_button = driver.findElement(By.id("openwindow"));
+		new_window_button.click();
+		Set<String> windows = driver.getWindowHandles();
+		for (String win : windows) {
+			if(!win.equals(parent_window)) {
+				driver.switchTo().window(win);
+				driver.findElement(By.name("q")).sendKeys("Thank you");
+				driver.close();
+			}
+			
+		}
+		driver.switchTo().window(parent_window);
+		driver.findElement(By.id("benzcheck")).click();
+	}
+}
