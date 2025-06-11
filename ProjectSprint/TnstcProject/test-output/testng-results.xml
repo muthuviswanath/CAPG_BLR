@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Clicked on Login/Sign up link]]>
+    </line>
+    <line>
+      <![CDATA[Entered user login ID: muthuviswanath@outlook.com]]>
+    </line>
+    <line>
+      <![CDATA[Entered password]]>
+    </line>
+    <line>
+      <![CDATA[Entered captcha: 6WOCPQ]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on login button]]>
+    </line>
+    <line>
+      <![CDATA[Logged in user name validated: ]]>
+    </line>
+    <line>
+      <![CDATA[Entered start place: CHENNAI]]>
+    </line>
+    <line>
+      <![CDATA[Selected start place from suggestions: CHENNAI]]>
+    </line>
+    <line>
+      <![CDATA[Entered end place: BANGALORE]]>
+    </line>
+    <line>
+      <![CDATA[Selected end place from suggestions: BANGALORE]]>
+    </line>
+    <line>
+      <![CDATA[Selected date: 20]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on search button]]>
+    </line>
+    <line>
+      <![CDATA[Search result page displayed successfully]]>
+    </line>
+    <line>
+      <![CDATA[Browser closed successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test completed successfully]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-06-11T17:30:10 IST" name="Suite" finished-at="2025-06-11T17:30:45 IST" duration-ms="35166">
+    <groups>
+    </groups>
+    <test started-at="2025-06-11T17:30:10 IST" name="Test" finished-at="2025-06-11T17:30:45 IST" duration-ms="35166">
+      <class name="com.capgemini.test.Tst_001_SearchBus">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@22fcf7ab]" started-at="2025-06-11T17:30:10 IST" name="browserSetup" finished-at="2025-06-11T17:30:27 IST" duration-ms="16104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="LoginToApp()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@22fcf7ab]" started-at="2025-06-11T17:30:27 IST" name="LoginToApp" finished-at="2025-06-11T17:30:34 IST" duration-ms="7659" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Login/Sign up link]]>
+            </line>
+            <line>
+              <![CDATA[Entered user login ID: muthuviswanath@outlook.com]]>
+            </line>
+            <line>
+              <![CDATA[Entered password]]>
+            </line>
+            <line>
+              <![CDATA[Entered captcha: 6WOCPQ]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on login button]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LoginToApp -->
+        <test-method signature="SearchBus()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@22fcf7ab]" started-at="2025-06-11T17:30:34 IST" name="SearchBus" finished-at="2025-06-11T17:30:45 IST" depends-on-methods="com.capgemini.test.Tst_001_SearchBus.LoginToApp" duration-ms="10603" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logged in user name validated: ]]>
+            </line>
+            <line>
+              <![CDATA[Entered start place: CHENNAI]]>
+            </line>
+            <line>
+              <![CDATA[Selected start place from suggestions: CHENNAI]]>
+            </line>
+            <line>
+              <![CDATA[Entered end place: BANGALORE]]>
+            </line>
+            <line>
+              <![CDATA[Selected end place from suggestions: BANGALORE]]>
+            </line>
+            <line>
+              <![CDATA[Selected date: 20]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on search button]]>
+            </line>
+            <line>
+              <![CDATA[Search result page displayed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- SearchBus -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@22fcf7ab]" started-at="2025-06-11T17:30:45 IST" name="tearDown" finished-at="2025-06-11T17:30:45 IST" duration-ms="651" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser closed successfully]]>
+            </line>
+            <line>
+              <![CDATA[Test completed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.capgemini.test.Tst_001_SearchBus -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
