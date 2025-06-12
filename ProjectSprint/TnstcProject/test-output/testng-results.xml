@@ -11,7 +11,7 @@
       <![CDATA[Entered password]]>
     </line>
     <line>
-      <![CDATA[Entered captcha: 6WOCPQ]]>
+      <![CDATA[Entered captcha: bvWsgd]]>
     </line>
     <line>
       <![CDATA[Clicked on login button]]>
@@ -47,16 +47,35 @@
       <![CDATA[Test completed successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-06-11T17:30:10 IST" name="Suite" finished-at="2025-06-11T17:30:45 IST" duration-ms="35166">
+  <suite started-at="2025-06-12T11:58:53 IST" name="Suite" finished-at="2025-06-12T11:59:22 IST" duration-ms="28744">
     <groups>
     </groups>
-    <test started-at="2025-06-11T17:30:10 IST" name="Test" finished-at="2025-06-11T17:30:45 IST" duration-ms="35166">
+    <test started-at="2025-06-12T11:58:53 IST" name="Test" finished-at="2025-06-12T11:59:22 IST" duration-ms="28744">
       <class name="com.capgemini.test.Tst_001_SearchBus">
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@22fcf7ab]" started-at="2025-06-11T17:30:10 IST" name="browserSetup" finished-at="2025-06-11T17:30:27 IST" duration-ms="16104" status="PASS">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7]" started-at="2025-06-12T11:58:52 IST" name="setUpReport" finished-at="2025-06-12T11:58:53 IST" duration-ms="367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReport -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7]" started-at="2025-06-12T11:58:53 IST" name="setUpClass" finished-at="2025-06-12T11:58:53 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7]" started-at="2025-06-12T11:58:53 IST" name="browserSetup" finished-at="2025-06-12T11:59:01 IST" duration-ms="8411" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="LoginToApp()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@22fcf7ab]" started-at="2025-06-11T17:30:27 IST" name="LoginToApp" finished-at="2025-06-11T17:30:34 IST" duration-ms="7659" status="PASS">
+        <test-method is-config="true" signature="setUpMethod(java.lang.reflect.Method)[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7]" started-at="2025-06-12T11:59:01 IST" name="setUpMethod" finished-at="2025-06-12T11:59:01 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.capgemini.test.Tst_001_SearchBus.LoginToApp() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="LoginToApp()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7]" started-at="2025-06-12T11:59:01 IST" name="LoginToApp" finished-at="2025-06-12T11:59:10 IST" duration-ms="8295" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Clicked on Login/Sign up link]]>
@@ -68,14 +87,36 @@
               <![CDATA[Entered password]]>
             </line>
             <line>
-              <![CDATA[Entered captcha: 6WOCPQ]]>
+              <![CDATA[Entered captcha: bvWsgd]]>
             </line>
             <line>
               <![CDATA[Clicked on login button]]>
             </line>
           </reporter-output>
         </test-method> <!-- LoginToApp -->
-        <test-method signature="SearchBus()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@22fcf7ab]" started-at="2025-06-11T17:30:34 IST" name="SearchBus" finished-at="2025-06-11T17:30:45 IST" depends-on-methods="com.capgemini.test.Tst_001_SearchBus.LoginToApp" duration-ms="10603" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7]" started-at="2025-06-12T11:59:10 IST" name="tearDownMethod" finished-at="2025-06-12T11:59:10 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginToApp status=SUCCESS method=Tst_001_SearchBus.LoginToApp()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7] output=Clicked on Login/Sign up link]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="setUpMethod(java.lang.reflect.Method)[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7]" started-at="2025-06-12T11:59:10 IST" name="setUpMethod" finished-at="2025-06-12T11:59:10 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.capgemini.test.Tst_001_SearchBus.SearchBus() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="SearchBus()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7]" started-at="2025-06-12T11:59:10 IST" name="SearchBus" finished-at="2025-06-12T11:59:21 IST" depends-on-methods="com.capgemini.test.Tst_001_SearchBus.LoginToApp" duration-ms="11550" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged in user name validated: ]]>
@@ -103,7 +144,18 @@
             </line>
           </reporter-output>
         </test-method> <!-- SearchBus -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@22fcf7ab]" started-at="2025-06-11T17:30:45 IST" name="tearDown" finished-at="2025-06-11T17:30:45 IST" duration-ms="651" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7]" started-at="2025-06-12T11:59:21 IST" name="tearDownMethod" finished-at="2025-06-12T11:59:21 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchBus status=SUCCESS method=Tst_001_SearchBus.SearchBus()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7] output=Logged in user name validated: ]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7]" started-at="2025-06-12T11:59:21 IST" name="tearDown" finished-at="2025-06-12T11:59:22 IST" duration-ms="372" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser closed successfully]]>
@@ -113,6 +165,10 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7]" started-at="2025-06-12T11:59:22 IST" name="tearDownReport" finished-at="2025-06-12T11:59:22 IST" duration-ms="450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
       </class> <!-- com.capgemini.test.Tst_001_SearchBus -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

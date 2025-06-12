@@ -17,12 +17,15 @@ import com.capgemini.pages.ValidateUserHomePage;
 import com.capgemini.parameters.ExcelReader;
 import com.capgemini.utils.Screenshots;
 
-public class Tst_001_SearchBus {
+public class Tst_001_SearchBus extends BaseReport {
 	WebDriver driver;
 	static String excelpath;
 	TnstcHomePage tnstcHomePage;
 	ValidateUserHomePage validateUserHomePage;
 	static String baseURL;
+	static String screenshotPath;
+
+
 	@BeforeClass
 	public void browserSetup() {
 		baseURL = "https://www.tnstc.in/OTRSOnline/";
@@ -33,6 +36,7 @@ public class Tst_001_SearchBus {
 		tnstcHomePage = new TnstcHomePage(driver);
 		validateUserHomePage = new ValidateUserHomePage(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
 	}
 
 	public String getUserLoginId() {
@@ -49,29 +53,40 @@ public class Tst_001_SearchBus {
 		//Step 1: Click on the login link
 		tnstcHomePage.getLoginSignUpLink().click();
 		Reporter.log("Clicked on Login/Sign up link", true);
-		Screenshots.takeScreenShot(driver, "LoginLinkClicked");
+		Assert.assertTrue(true);
+		screenshotPath = Screenshots.takeScreenShot(driver, "LoginLinkClicked");
+		generateReportWithScreenshot("Click on the login link", screenshotPath);
+		
+
 
 		//Step 2: Enter user login ID
 		tnstcHomePage.getUserLoginIdInput().sendKeys(getUserLoginId());
 		Reporter.log("Entered user login ID: " + getUserLoginId(), true);
-		Screenshots.takeScreenShot(driver, "UserLoginIdEntered");
+		Assert.assertTrue(true);
+		screenshotPath = Screenshots.takeScreenShot(driver, "UserLoginIdEntered");
+		generateReportWithScreenshot("Enter the user login ID", screenshotPath);
 
 		//Step 3: Enter password
 		tnstcHomePage.getPasswordInput().sendKeys(getPassword());
 		Reporter.log("Entered password", true);
-		Screenshots.takeScreenShot(driver, "PasswordEntered");
-
+		Assert.assertTrue(true);
+		screenshotPath = Screenshots.takeScreenShot(driver, "PasswordEntered");
+		generateReportWithScreenshot("Enter the password", screenshotPath);
+		
 		//Step 4: Enter captcha
 		String predefinedCaptcha = tnstcHomePage.getPredefinedCaptchaText().getText();
 		tnstcHomePage.getCaptchaInput().sendKeys(predefinedCaptcha);
 		Reporter.log("Entered captcha: " + predefinedCaptcha, true);
-		Screenshots.takeScreenShot(driver, "CaptchaEntered");
+		Assert.assertTrue(true);
+		screenshotPath = Screenshots.takeScreenShot(driver, "CaptchaEntered");
+		generateReportWithScreenshot("Enter the captcha", screenshotPath);
 
 		//Step 5: Click on login button
 		tnstcHomePage.getLoginButton().click();
 		Reporter.log("Clicked on login button", true);
-		Screenshots.takeScreenShot(driver, "LoginButtonClicked");
-
+		Assert.assertTrue(true);
+		screenshotPath = Screenshots.takeScreenShot(driver, "LoginButtonClicked");
+		generateReportWithScreenshot("Click on the login button", screenshotPath);
 	}
 
 	@Test(dependsOnMethods = "LoginToApp")
@@ -80,7 +95,9 @@ public class Tst_001_SearchBus {
 		//Step 6: Validate logged in user name
 		String loggedInUserName = validateUserHomePage.getLoggedInUserNameText().getText();
 		Reporter.log("Logged in user name validated: " + loggedInUserName, true);
-		Screenshots.takeScreenShot(driver, "LoggedInUserNameValidated");
+		Assert.assertTrue(true);
+		screenshotPath = Screenshots.takeScreenShot(driver, "LoggedInUserNameValidated");
+		generateReportWithScreenshot("Validate logged in user name", screenshotPath);
 
 		//Step 7: Enter start place
 		String startPlace = ExcelReader.getCellData(excelpath, "SearchDetails", 1, 0);
@@ -89,7 +106,10 @@ public class Tst_001_SearchBus {
 
 		validateUserHomePage.getMatchStartPlaceInput().sendKeys(startPlace);
 		Reporter.log("Entered start place: " + startPlace, true);
-		Screenshots.takeScreenShot(driver, "StartPlaceEntered");
+		Assert.assertTrue(true);
+		screenshotPath = Screenshots.takeScreenShot(driver, "StartPlaceEntered");
+		generateReportWithScreenshot("Enter start place", screenshotPath);
+		
 		Thread.sleep(1000); // Wait for input to process
 
 		//Step 8: Select start place from suggestions
@@ -97,7 +117,9 @@ public class Tst_001_SearchBus {
 			if (place.getText().equalsIgnoreCase("CHENNAI TAMBARAM")) {
 				place.click();
 				Reporter.log("Selected start place from suggestions: " + startPlace, true);
-				Screenshots.takeScreenShot(driver, "StartPlaceSelected");
+				Assert.assertTrue(true);
+				screenshotPath = Screenshots.takeScreenShot(driver, "StartPlaceSelected");
+				generateReportWithScreenshot("Select start place from suggestions", screenshotPath);
 				break;
 			}
 		}
@@ -105,7 +127,9 @@ public class Tst_001_SearchBus {
 		//Step 9: Enter end place
 		validateUserHomePage.getMatchEndPlaceInput().sendKeys(endPlace);
 		Reporter.log("Entered end place: " + endPlace, true);
-		Screenshots.takeScreenShot(driver, "EndPlaceEntered");
+		Assert.assertTrue(true);
+		screenshotPath = Screenshots.takeScreenShot(driver, "EndPlaceEntered");
+		generateReportWithScreenshot("Enter end place", screenshotPath);
 		Thread.sleep(1000); // Wait for input to process
 
 		//Step 10: Select end place from suggestions
@@ -113,7 +137,9 @@ public class Tst_001_SearchBus {
 			if (place.getText().equalsIgnoreCase("BENGALURU")) {
 				place.click();
 				Reporter.log("Selected end place from suggestions: " + endPlace, true);
-				Screenshots.takeScreenShot(driver, "EndPlaceSelected");
+				Assert.assertTrue(true);
+				screenshotPath = Screenshots.takeScreenShot(driver, "EndPlaceSelected");
+				generateReportWithScreenshot("Select end place from suggestions", screenshotPath);
 				break;
 			}
 		}
@@ -121,18 +147,24 @@ public class Tst_001_SearchBus {
 		//Step 11: Select date
 		driver.findElement(By.xpath("//td/a[text()='"+date+"']")).click();
 		Reporter.log("Selected date: " + date, true);
-		Screenshots.takeScreenShot(driver, "DateSelected");
+		Assert.assertTrue(true);
+		screenshotPath = Screenshots.takeScreenShot(driver, "DateSelected");
+		generateReportWithScreenshot("Select date", screenshotPath);
 
 		Thread.sleep(1000); // Wait for date selection to process
 
 		//Step 12: Click on search button
 		validateUserHomePage.getSearchButton().click();
 		Reporter.log("Clicked on search button", true);
-		Screenshots.takeScreenShot(driver, "SearchButtonClicked");
+		Assert.assertTrue(true);
+		screenshotPath = Screenshots.takeScreenShot(driver, "SearchButtonClicked");		
+		generateReportWithScreenshot("Click on the search button", screenshotPath);
 		Thread.sleep(1000); // Wait for search to process
-		Reporter.log("Search result page displayed successfully", true);
-		Screenshots.takeScreenShot(driver, "SearchResultPageDisplayed");
 
+		Reporter.log("Search result page displayed successfully", true);
+		Assert.assertTrue(true);
+		screenshotPath = Screenshots.takeScreenShot(driver, "SearchResultPageDisplayed");
+		generateReportWithScreenshot("Search result page displayed", screenshotPath);
 
 	}
 

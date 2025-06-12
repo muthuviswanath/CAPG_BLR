@@ -7,7 +7,11 @@
         <methods>
           <include name="tearDown"/>
           <include name="SearchBus"/>
+          <include name="logMethodResult"/>
           <include name="LoginToApp"/>
+          <include name="setupClass"/>
+          <include name="setupMethod"/>
+          <include name="setupReport"/>
           <include name="browserSetup"/>
         </methods>
       </class> <!-- com.capgemini.test.Tst_001_SearchBus -->
