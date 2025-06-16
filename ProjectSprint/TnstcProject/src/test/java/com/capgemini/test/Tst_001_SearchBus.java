@@ -171,7 +171,7 @@ public class Tst_001_SearchBus extends BaseReport {
 	@AfterClass
 	public void tearDown() {
 		if (driver != null) {
-			driver.quit();
+			driver.close();
 			Reporter.log("Browser closed successfully", true);
 		}
 		Reporter.log("Test completed successfully", true);

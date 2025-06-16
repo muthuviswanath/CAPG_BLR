@@ -13,8 +13,9 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 
 public class SetupDriver {
-	private static WebDriver driver;
+
 	public static WebDriver getDriver(String browserName) {
+		WebDriver driver = null;		
 		if(driver == null) {
 			switch(browserName.toLowerCase()) {
 			case "chrome":
@@ -52,4 +53,5 @@ public class SetupDriver {
 		}
 		return driver;
 	}
+
 }

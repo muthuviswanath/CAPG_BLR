@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Clicked on Login/Sign up link]]>
@@ -8,16 +8,31 @@
       <![CDATA[Entered user login ID: muthuviswanath@outlook.com]]>
     </line>
     <line>
+      <![CDATA[Entered start place: CHENNAI]]>
+    </line>
+    <line>
       <![CDATA[Entered password]]>
     </line>
     <line>
-      <![CDATA[Entered captcha: bvWsgd]]>
+      <![CDATA[Entered captcha: 1Gx07u]]>
+    </line>
+    <line>
+      <![CDATA[Selected start place from suggestions: CHENNAI]]>
     </line>
     <line>
       <![CDATA[Clicked on login button]]>
     </line>
     <line>
+      <![CDATA[Entered end place: BANGALORE]]>
+    </line>
+    <line>
+      <![CDATA[Selected end place from suggestions: BANGALORE]]>
+    </line>
+    <line>
       <![CDATA[Logged in user name validated: ]]>
+    </line>
+    <line>
+      <![CDATA[Selected date: 20]]>
     </line>
     <line>
       <![CDATA[Entered start place: CHENNAI]]>
@@ -32,10 +47,22 @@
       <![CDATA[Selected end place from suggestions: BANGALORE]]>
     </line>
     <line>
+      <![CDATA[Clicked on search button]]>
+    </line>
+    <line>
+      <![CDATA[Search result page displayed successfully]]>
+    </line>
+    <line>
       <![CDATA[Selected date: 20]]>
     </line>
     <line>
+      <![CDATA[Clicked on AC Sleeper filter]]>
+    </line>
+    <line>
       <![CDATA[Clicked on search button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on View Seats button]]>
     </line>
     <line>
       <![CDATA[Search result page displayed successfully]]>
@@ -46,25 +73,223 @@
     <line>
       <![CDATA[Test completed successfully]]>
     </line>
+    <line>
+      <![CDATA[Entered mobile number]]>
+    </line>
+    <line>
+      <![CDATA[Entered email]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-06-12T11:58:53 IST" name="Suite" finished-at="2025-06-12T11:59:22 IST" duration-ms="28744">
+  <suite started-at="2025-06-12T16:04:48 IST" name="Suite" finished-at="2025-06-12T16:05:55 IST" duration-ms="66728">
     <groups>
     </groups>
-    <test started-at="2025-06-12T11:58:53 IST" name="Test" finished-at="2025-06-12T11:59:22 IST" duration-ms="28744">
-      <class name="com.capgemini.test.Tst_001_SearchBus">
-        <test-method is-config="true" signature="setUpReport()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7]" started-at="2025-06-12T11:58:52 IST" name="setUpReport" finished-at="2025-06-12T11:58:53 IST" duration-ms="367" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpReport -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7]" started-at="2025-06-12T11:58:53 IST" name="setUpClass" finished-at="2025-06-12T11:58:53 IST" duration-ms="6" status="PASS">
+    <test started-at="2025-06-12T16:04:48 IST" name="Test" finished-at="2025-06-12T16:05:55 IST" duration-ms="66728">
+      <class name="com.capgemini.test.Tst_002_BookBusAsGuest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.capgemini.test.Tst_002_BookBusAsGuest@63070bab]" started-at="2025-06-12T16:04:48 IST" name="setUpClass" finished-at="2025-06-12T16:04:48 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7]" started-at="2025-06-12T11:58:53 IST" name="browserSetup" finished-at="2025-06-12T11:59:01 IST" duration-ms="8411" status="PASS">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:com.capgemini.test.Tst_002_BookBusAsGuest@63070bab]" started-at="2025-06-12T16:04:48 IST" name="browserSetup" finished-at="2025-06-12T16:04:58 IST" duration-ms="10193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method is-config="true" signature="setUpMethod(java.lang.reflect.Method)[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7]" started-at="2025-06-12T11:59:01 IST" name="setUpMethod" finished-at="2025-06-12T11:59:01 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setUpMethod(java.lang.reflect.Method)[pri:0, instance:com.capgemini.test.Tst_002_BookBusAsGuest@63070bab]" started-at="2025-06-12T16:04:58 IST" name="setUpMethod" finished-at="2025-06-12T16:04:58 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.capgemini.test.Tst_002_BookBusAsGuest.SearchBus() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="SearchBus()[pri:0, instance:com.capgemini.test.Tst_002_BookBusAsGuest@63070bab]" started-at="2025-06-12T16:04:58 IST" name="SearchBus" finished-at="2025-06-12T16:05:55 IST" duration-ms="56428" status="FAIL">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cd610e89a7fe340c1aa3ef90d1127824, findChildElements [value, id, using]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\muthu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59382}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59382/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cd610e89a7fe340c1aa3ef90d1127824]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cd610e89a7fe340c1aa3ef90d1127824, findChildElements [value, id, using]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\muthu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59382}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59382/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cd610e89a7fe340c1aa3ef90d1127824
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:571)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
+at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:203)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy18.findElements(Unknown Source)
+at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:149)
+at com.capgemini.test.Tst_002_BookBusAsGuest.SearchBus(Tst_002_BookBusAsGuest.java:165)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:500)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$2(JdkHttpClient.java:387)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+... 3 more
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:971)
+at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:459)
+... 8 more
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:440)
+at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:590)
+at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
+at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:182)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+... 3 more
+Caused by: java.net.SocketException: Connection reset
+at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:403)
+at java.base/sun.nio.ch.SocketChannelImpl.implRead(SocketChannelImpl.java:435)
+at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:493)
+at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1478)
+at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1423)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1423)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Entered start place: CHENNAI]]>
+            </line>
+            <line>
+              <![CDATA[Selected start place from suggestions: CHENNAI]]>
+            </line>
+            <line>
+              <![CDATA[Entered end place: BANGALORE]]>
+            </line>
+            <line>
+              <![CDATA[Selected end place from suggestions: BANGALORE]]>
+            </line>
+            <line>
+              <![CDATA[Selected date: 20]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on search button]]>
+            </line>
+            <line>
+              <![CDATA[Search result page displayed successfully]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on AC Sleeper filter]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on View Seats button]]>
+            </line>
+            <line>
+              <![CDATA[Entered mobile number]]>
+            </line>
+            <line>
+              <![CDATA[Entered email]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- SearchBus -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.capgemini.test.Tst_002_BookBusAsGuest@63070bab]" started-at="2025-06-12T16:05:55 IST" name="tearDownMethod" finished-at="2025-06-12T16:05:55 IST" duration-ms="2" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchBus status=FAILURE method=Tst_002_BookBusAsGuest.SearchBus()[pri:0, instance:com.capgemini.test.Tst_002_BookBusAsGuest@63070bab] output=Entered start place: CHENNAI]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "drv" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "drv" is null
+at com.capgemini.utils.Screenshots.takeScreenShot(Screenshots.java:14)
+at com.capgemini.test.BaseReport.tearDownMethod(BaseReport.java:49)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.capgemini.test.Tst_002_BookBusAsGuest@63070bab]" started-at="2025-06-12T16:05:55 IST" name="tearDown" finished-at="2025-06-12T16:05:55 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.capgemini.test.Tst_002_BookBusAsGuest -->
+      <class name="com.capgemini.test.Tst_001_SearchBus">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@77f80c04]" started-at="2025-06-12T16:04:47 IST" name="setUpReport" finished-at="2025-06-12T16:04:48 IST" duration-ms="673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReport -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@77f80c04]" started-at="2025-06-12T16:04:48 IST" name="setUpClass" finished-at="2025-06-12T16:04:48 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@77f80c04]" started-at="2025-06-12T16:04:48 IST" name="browserSetup" finished-at="2025-06-12T16:04:58 IST" duration-ms="10189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method is-config="true" signature="setUpMethod(java.lang.reflect.Method)[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@77f80c04]" started-at="2025-06-12T16:04:58 IST" name="setUpMethod" finished-at="2025-06-12T16:04:58 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,7 +300,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="LoginToApp()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7]" started-at="2025-06-12T11:59:01 IST" name="LoginToApp" finished-at="2025-06-12T11:59:10 IST" duration-ms="8295" status="PASS">
+        <test-method signature="LoginToApp()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@77f80c04]" started-at="2025-06-12T16:04:58 IST" name="LoginToApp" finished-at="2025-06-12T16:05:09 IST" duration-ms="11207" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Clicked on Login/Sign up link]]>
@@ -87,25 +312,25 @@
               <![CDATA[Entered password]]>
             </line>
             <line>
-              <![CDATA[Entered captcha: bvWsgd]]>
+              <![CDATA[Entered captcha: 1Gx07u]]>
             </line>
             <line>
               <![CDATA[Clicked on login button]]>
             </line>
           </reporter-output>
         </test-method> <!-- LoginToApp -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7]" started-at="2025-06-12T11:59:10 IST" name="tearDownMethod" finished-at="2025-06-12T11:59:10 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@77f80c04]" started-at="2025-06-12T16:05:09 IST" name="tearDownMethod" finished-at="2025-06-12T16:05:10 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LoginToApp status=SUCCESS method=Tst_001_SearchBus.LoginToApp()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7] output=Clicked on Login/Sign up link]]]>
+                <![CDATA[[TestResult name=LoginToApp status=SUCCESS method=Tst_001_SearchBus.LoginToApp()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@77f80c04] output=Clicked on Login/Sign up link]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod(java.lang.reflect.Method)[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7]" started-at="2025-06-12T11:59:10 IST" name="setUpMethod" finished-at="2025-06-12T11:59:10 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setUpMethod(java.lang.reflect.Method)[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@77f80c04]" started-at="2025-06-12T16:05:10 IST" name="setUpMethod" finished-at="2025-06-12T16:05:10 IST" duration-ms="13" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -116,7 +341,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="SearchBus()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7]" started-at="2025-06-12T11:59:10 IST" name="SearchBus" finished-at="2025-06-12T11:59:21 IST" depends-on-methods="com.capgemini.test.Tst_001_SearchBus.LoginToApp" duration-ms="11550" status="PASS">
+        <test-method signature="SearchBus()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@77f80c04]" started-at="2025-06-12T16:05:10 IST" name="SearchBus" finished-at="2025-06-12T16:05:26 IST" depends-on-methods="com.capgemini.test.Tst_001_SearchBus.LoginToApp" duration-ms="16078" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged in user name validated: ]]>
@@ -144,18 +369,18 @@
             </line>
           </reporter-output>
         </test-method> <!-- SearchBus -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7]" started-at="2025-06-12T11:59:21 IST" name="tearDownMethod" finished-at="2025-06-12T11:59:21 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@77f80c04]" started-at="2025-06-12T16:05:26 IST" name="tearDownMethod" finished-at="2025-06-12T16:05:26 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SearchBus status=SUCCESS method=Tst_001_SearchBus.SearchBus()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7] output=Logged in user name validated: ]]]>
+                <![CDATA[[TestResult name=SearchBus status=SUCCESS method=Tst_001_SearchBus.SearchBus()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@77f80c04] output=Logged in user name validated: ]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7]" started-at="2025-06-12T11:59:21 IST" name="tearDown" finished-at="2025-06-12T11:59:22 IST" duration-ms="372" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@77f80c04]" started-at="2025-06-12T16:05:26 IST" name="tearDown" finished-at="2025-06-12T16:05:26 IST" duration-ms="412" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser closed successfully]]>
@@ -165,7 +390,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@4e3958e7]" started-at="2025-06-12T11:59:22 IST" name="tearDownReport" finished-at="2025-06-12T11:59:22 IST" duration-ms="450" status="PASS">
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:com.capgemini.test.Tst_001_SearchBus@77f80c04]" started-at="2025-06-12T16:05:55 IST" name="tearDownReport" finished-at="2025-06-12T16:05:55 IST" duration-ms="385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
